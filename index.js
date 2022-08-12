@@ -1,15 +1,15 @@
 // it is a first method
 
-// function getArea(number) {
-//     if (number === undefined) throw new Error("Будь ласка, введіть радіус");
-//     if (!Number.isFinite(number) || number < 0) throw new Error("Повинно бути числове значення!");
-//     return Math.PI * Math.pow(number, 2);
-// }
-// try {
-//     alert(getArea(+prompt(" Будь ласка, введіть радіус")));
-// } catch (error) {
-//     alert(error.mesage);
-// }
+function getArea(number) {
+    if (number === undefined) throw new Error("Будь ласка, введіть радіус");
+    if (!Number.isFinite(number) || number < 0) throw new Error("Повинно бути числове значення!");
+    return Math.PI * Math.pow(number, 2);
+}
+try {
+    alert(getArea(+prompt(" Будь ласка, введіть радіус")));
+} catch (error) {
+    alert(error.mesage);
+}
 
 // it is a second method
 
@@ -33,7 +33,7 @@ function calculateArea(myRadius) {
     return myRadius * myRadius * Math.PI;
 }
 
-var myRadius = parseFloat(prompt("Enter the radius of your circle in cm:",0));
-var area = calculateArea(myRadius);
+ myRadius = parseFloat(prompt("Enter the radius of your circle in cm:",0));
+ area = calculateArea(myRadius);
 
 alert("A circle with a " + myRadius + "centimeter radius has an area of " + area + "centimeters. ");
