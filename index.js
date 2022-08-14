@@ -39,7 +39,7 @@
 // alert("A circle with a " + myRadius + "centimeter radius has an area of " + area + "centimeters. ");
 
 // S = π × r2
-// it is a third method
+// it is a third method it is a method, that i do my own
 const PI=3.14;
 const radius= +prompt('Будь ласка, введіть радіус');
 const getArea= (currentRadius)=>{ return currentRadius*currentRadius*PI};
